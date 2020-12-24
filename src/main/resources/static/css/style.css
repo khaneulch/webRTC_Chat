@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+
+body { background-color : #0d265c; margin: 0; min-width: 400px;}
+
+button {
+	display: inline-block;
+	background: #ffffff;
+    border: 0;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+h1 { background-color: #f6fbff; padding: 5px 20px;}
+
+ul {padding: 2px 15px;}
+li {display: block;}
+
+select { padding: 3px; background-color: #ffffff;}
+
+.folding {
+	display: none;
+}
+
+.mt20 { margin-top: 20px;}
+
+.center {text-align: center;}
+
+.video-section { position: relative;}
+
+.local-section { position: absolute; left: 77%; width: 20%;}
+.local-section video { width: 100%;}
+
+.remote-section { width: 70%; padding-left: 20px;}
+.remote-section video { width: 100%;}
+
+.button-section { padding: 10px 20px;}
+
+.chat-section { 
+	position: relative;
+	margin: 5px 20px;
+	background-color: #e2e2e2;
+	height: 300px;
+}
+
+.chat-section .chat-wrap { height: 250px; overflow: auto; }
+
+.chat-section li {
+    margin-top: 5px;
+}
+
+.chat-section li span {
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+
+.chat-section li.get span {
+	background-color: #f0f8ff;
+}
+
+.chat-section li.sent { text-align: right; }
+
+.chat-section li.sent span {
+	background-color: #ffface;
+}
+
+.chat-section .input-wrap {
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+}
+.chat-section .input-wrap input{   
+	width: calc(100% - 85px);
+    padding: 7px 5px 6px 5px;
+    border: 1px solid #b2b2b2;
+    margin-left: 10px;
+}
+
+.file-section { 
+	padding: 10px 20px;
+	background-color: #c8c8c8;
+}
+
+.file-wrap .file-text {
+	border: 1px solid #949494;
+    background-color: #f2f2f2;
+    padding: 6px 10px 4px 10px;
+    display: inline-block;
+    min-width: 300px;
+    max-width: calc(100% - 12px);
+    text-align: center;
+    height: 17px;
+    cursor: pointer;
+}
+
+.file-text span {
+	font-size: 12px;
+}
+
+.file-wrap input[type="file"] input[type="button"] {
+	display: none;
+}
+
+.camera-selection { margin: 0 20px;}
+.camera-selection select { width: 200px; }
