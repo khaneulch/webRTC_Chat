@@ -8,7 +8,10 @@
 		
 		<link  href="css/style.css" rel="stylesheet"/>
 	</head>
-	<body>
+	<body class="contents">
+		<section class="buttonset">
+            <div id="button_list">MENU</div>
+        </section>
 		<h1 id="roomNo">WEB RTC</h1>
 		
 		<div class="video-section">
@@ -20,7 +23,7 @@
 			</div>
 		</div>
 	
-		<div class="button-section">
+		<div class="button-section button-section-left">
 			<button id="startButton">방만들기</button>
 			<button id="joinButton">들어가기</button>
 			<button id="changeButton">화면전환</button>
@@ -54,4 +57,16 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 	<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
 	<script type="module" src="js/display_share.js"></script>
+	<script>
+	$(function() {
+		$menuLeft = $('.button-section-left');
+		$nav_list = $('#button_list');
+
+		$nav_list.click(function() {
+			$(this).toggleClass('active');
+			$('.contents').toggleClass('button-section-toright');
+			$menuLeft.toggleClass('button-section-open');
+		});
+	});
+	</script>
 </html>
