@@ -125,7 +125,7 @@ function getUserMediaStream() {
 	
 	/** 카메라 리스트를 불러옴 */
 	navigator.mediaDevices.enumerateDevices()
-		.then( gotDevices)
+		.then( getDevices)
 		.catch( error => console.log(error));
 }
 
@@ -402,8 +402,8 @@ function cameraButtonAction() {
 		navigator
 			.mediaDevices
 			.getUserMedia( tempConstraint)
-			.then( gotStream)
-			.then( gotDevices)
+			.then( getStream)
+			.then( getDevices)
 			.catch( error => console.log(error.message));
 	} else {
 		alert('화면 공유중에는 카메라 전환이 불가능합니다.');
@@ -418,7 +418,7 @@ function stopMediaTracks( stream) {
 }
 
 /** video element에 스트림 설정 */
-function gotStream( stream) {
+function getStream( stream) {
 	
 	let videoTrack = stream.getVideoTracks()[0];
 	let audioTrack = stream.getAudioTracks()[0];
@@ -442,7 +442,7 @@ function gotStream( stream) {
 }
 
 /** 카메라 리스트를 불러옴 */
-function gotDevices( deviceInfos) {
+function getDevices( deviceInfos) {
 	
 	$cameraSelect.html('');
 	
