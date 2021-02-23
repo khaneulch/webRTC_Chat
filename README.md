@@ -1,9 +1,10 @@
 # Spring boot + webRTC 화상채팅
 webRTC를 이용한 1:1 화상회의 및 파일공유
 
-JavaScript<br>
-Spring Boot<br>
-WebSocket
+## SKILL
+ - JavaScript
+ - Spring Boot
+ - WebSocket
 
 ## 1. 공통
 ### /static/js/common.js
