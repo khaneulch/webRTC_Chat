@@ -3,7 +3,7 @@
  */
 
 export var common = {
-	address 		: 'WSS://14.36.55.80:13443/socket',
+	address 		: 'WSS://x.x.x.x:13443/socket',
 	constraints 	: {audio : true, video : true},
 	fileName		: '',
 	filePending		: false,
